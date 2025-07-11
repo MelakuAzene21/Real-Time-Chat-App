@@ -5,7 +5,7 @@ const API = (token) =>
     baseURL: process.env.REACT_APP_SERVER_URL,
     headers: { Authorization: token },
   });
-let url = process.env.REACT_APP_SERVER_URL;
+let url = process.env.REACT_APP_SERVER_URL ||' http://localhost:8000';
 export const loginUser = async (body) => {
   try {
     return await axios.post(`${url}/auth/login`, body);

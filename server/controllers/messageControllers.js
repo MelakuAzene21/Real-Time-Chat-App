@@ -26,6 +26,7 @@ export const sendMessage = async (req, res) => {
     res.status(500).json({ error: error });
   }
 };
+
 export const getMessages = async (req, res) => {
   const { chatId } = req.params;
   try {

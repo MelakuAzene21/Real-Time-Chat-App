@@ -37,6 +37,7 @@ export const accessChats = async (req, res) => {
     }
   }
 };
+
 export const fetchAllChats = async (req, res) => {
   try {
     const chats = await Chat.find({
@@ -56,6 +57,7 @@ export const fetchAllChats = async (req, res) => {
     console.log(error);
   }
 };
+
 export const creatGroup = async (req, res) => {
   const { chatName, users } = req.body;
   if (!chatName || !users) {

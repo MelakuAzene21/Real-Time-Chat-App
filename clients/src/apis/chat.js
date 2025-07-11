@@ -33,7 +33,7 @@ export const createGroup = async (body) => {
     return data;
   } catch (error) {
     console.log('error in create group api');
-  }
+  } 
 };
 export const addToGroup = async (body) => {
   try {
